@@ -1,0 +1,710 @@
+[
+    {
+        "name": "BFI",
+        "questions": {
+            "1": "Is talkative.",
+            "2": "Tends to find fault with others.",
+            "3": "Does a thorough job.",
+            "4": "Is depressed blue.",
+            "5": "Is original meaning comes up with new ideas.",
+            "6": "Is reserved.",
+            "7": "Is helpful and unselfish with others.",
+            "8": "Can be somewhat careless.",
+            "9": "Is relaxed meaning handles stress well.",
+            "10": "Is curious about many different things.",
+            "11": "Is full of energy.",
+            "12": "Starts quarrels with others.",
+            "13": "Is a reliable worker.",
+            "14": "Can be tense.",
+            "15": "Is ingenious meaning a deep thinker.",
+            "16": "Generates a lot of enthusiasm.",
+            "17": "Has a forgiving nature.",
+            "18": "Tends to be disorganized.",
+            "19": "Worries a lot.",
+            "20": "Has an active imagination.",
+            "21": "Tends to be quiet.",
+            "22": "Is generally trusting.",
+            "23": "Tends to be lazy.",
+            "24": "Is emotionally stable not easily upset.",
+            "25": "Is inventive.",
+            "26": "Has an assertive personality.",
+            "27": "Can be cold and aloof.",
+            "28": "Perseveres until the task is finished.",
+            "29": "Can be moody.",
+            "30": "Values artistic meaning aesthetic experiences.",
+            "31": "Is sometimes shy inhibited.",
+            "32": "Is considerate and kind to almost everyone.",
+            "33": "Does things efficiently.",
+            "34": "Remains calm in tense situations.",
+            "35": "Prefers work that is routine.",
+            "36": "Is outgoing meaning sociable.",
+            "37": "Is sometimes rude to others.",
+            "38": "Makes plans and follows through with them.",
+            "39": "Gets nervous easily.",
+            "40": "Likes to reflect meaning play with ideas.",
+            "41": "Has few artistic interests.",
+            "42": "Likes to cooperate with others.",
+            "43": "Is easily distracted.",
+            "44": "Is sophisticated in art music or literature."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index: numerical_score\".",
+        "prompt": "You can only reply numbers from 1 to 5 in the following statements. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement using these and only these numerical scales exactly as their names and nothig else. The scales are:  1 denotes 'strongly disagree', 2 denotes 'a little disagree', 3 denotes 'neither agree nor disagree', 4 denotes 'little agree', 5 denotes 'strongly agree'. Here are the statements, score them one by one:",
+        "scale": 6,
+        "compute_mode": "AVG",
+        "reverse": [6,21,31,2,12,27,37,8,18,23,43,9,24,34,35,41],
+        "categories": [
+            {
+                "cat_name": "Extraversion",
+                "cat_questions": [1, 6, 11, 16, 21, 26, 31, 36],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.25,
+                        "std": 0.9,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Agreeableness",
+                "cat_questions": [2, 7, 12, 17, 22, 27, 32, 37, 42],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.64,
+                        "std": 0.72,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Conscientiousness",
+                "cat_questions": [3, 8, 13, 18, 23, 28, 33, 38, 43],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.45,
+                        "std": 0.73,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions": [4, 9, 14, 19, 24, 29, 34, 39],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.32,
+                        "std": 0.82,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Openness",
+                "cat_questions": [5, 10, 15, 20, 25, 30, 35, 40, 41, 44],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.92,
+                        "std": 0.66,
+                        "n": 6076
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "TIPI",
+        "questions": {
+            "1": "I see myself as extraverted, enthusiastic.",
+            "2": "I see myself as reserved, quiet.",
+            "3": "I see myself as critical, quarrelsome.",
+            "4": "I see myself as sympathetic, warm.",
+            "5": "I see myself as dependable, self-disciplined.",
+            "6": "I see myself as disorganized, careless.",
+            "7": "I see myself as anxious, easily upset.",
+            "8": "I see myself as calm, emotionally stable.",
+            "9": "I see myself as open to new experiences, complex.",
+            "10": "I see myself as conventional, uncreative."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Format: \"statement index: numerical_score\".",
+        "prompt": "You can only reply numbers from 1 to 7 in the following statements. Here are a number of characteristics that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement using these and only these numerical scales exactly as their names and nothing else. The scales are:  1 denotes 'strongly disagree', 2 denotes 'disagree', 3 denotes 'somewhat disagree', 4 denotes 'neither agree nor disagree', 5 denotes 'somewhat agree', 6 denotes 'agree', 7 denotes 'strongly agree'. Here are the statements, score them one by one:",
+        "scale": 7,
+        "compute_mode": "AVG",
+        "reverse": [2, 4, 6, 8, 10],
+        "categories": [
+            {
+                "cat_name": "Extraversion",
+                "cat_questions": [1, 2],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 4.44,
+                        "std": 1.32,
+                        "n": 163
+                    }
+                ]
+            },
+            {
+                "cat_name": "Agreeableness",
+                "cat_questions": [3, 4],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 5.23,
+                        "std": 1.16,
+                        "n": 163
+                    }
+                ]
+            },
+            {
+                "cat_name": "Conscientiousness",
+                "cat_questions": [5, 6],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 5.40,
+                        "std": 1.12,
+                        "n": 163
+                    }
+                ]
+            },
+            {
+                "cat_name": "Emotional Stability",
+                "cat_questions": [7, 8],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 4.83,
+                        "std": 1.23,
+                        "n": 163
+                    }
+                ]
+            },
+            {
+                "cat_name": "Openness to Experiences",
+                "cat_questions": [9, 10],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 5.38,
+                        "std": 1.04,
+                        "n": 163
+                    }
+                ]
+            }
+        ]
+    },    
+    {
+        "name": "HEXACO-PI-R",
+        "questions": {
+            "1": "I would be quite bored by a visit to an art gallery.",
+            "2": "I clean my office or home quite frequently.",
+            "3": "I rarely hold a grudge even against people who have badly wronged me.",
+            "4": "I feel reasonably satisfied with myself overall.",
+            "5": "I would feel afraid if I had to travel in bad weather conditions.",
+            "6": "If I want something from a person I dislike I will act very nicely toward that person in order to get it.",
+            "7": "I'm interested in learning about the history and politics of other countries.",
+            "8": "When working I often set ambitious goals for myself.",
+            "9": "People sometimes tell me that I am too critical of others.",
+            "10": "I rarely express my opinions in group meetings.",
+            "11": "I sometimes can't help worrying about little things.",
+            "12": "If I knew that I could never get caught I would be willing to steal a million dollars.",
+            "13": "I would like a job that requires following a routine rather than being creative.",
+            "14": "I often check my work over repeatedly to find any mistakes.",
+            "15": "People sometimes tell me that I'm too stubborn.",
+            "16": "I avoid making 'small talk' with people.",
+            "17": "When I suffer from a painful experience I need someone to make me feel comfortable.",
+            "18": "Having a lot of money is not especially important to me.",
+            "19": "I think that paying attention to radical ideas is a waste of time.",
+            "20": "I make decisions based on the feeling of the moment rather than on careful thought.",
+            "21": "People think of me as someone who has a quick temper.",
+            "22": "I am energetic nearly all the time.",
+            "23": "I feel like crying when I see other people crying.",
+            "24": "I am an ordinary person who is no better than others.",
+            "25": "I wouldn't spend my time reading a book of poetry.",
+            "26": "I plan ahead and organize things to avoid scrambling at the last minute.",
+            "27": "My attitude toward people who have treated me badly is 'forgive and forget'.",
+            "28": "I think that most people like some aspects of my personality.",
+            "29": "I don’t mind doing jobs that involve dangerous work.",
+            "30": "I wouldn't use flattery to get a raise or promotion at work even if I thought it would succeed.",
+            "31": "I enjoy looking at maps of different places.",
+            "32": "I often push myself very hard when trying to achieve a goal.",
+            "33": "I generally accept people’s faults without complaining about them.",
+            "34": "In social situations I'm usually the one who makes the first move.",
+            "35": "I worry a lot less than most people do.",
+            "36": "I would be tempted to buy stolen property if I were financially tight.",
+            "37": "I would enjoy creating a work of art such as a novel a song or a painting.",
+            "38": "When working on something I don't pay much attention to small details.",
+            "39": "I am usually quite flexible in my opinions when people disagree with me.",
+            "40": "I enjoy having lots of people around to talk with.",
+            "41": "I can handle difficult situations without needing emotional support from anyone else.",
+            "42": "I would like to live in a very expensive high-class neighborhood.",
+            "43": "I like people who have unconventional views.",
+            "44": "I make a lot of mistakes because I don't think before I act.",
+            "45": "I rarely feel anger even when people treat me quite badly.",
+            "46": "On most days I feel cheerful and optimistic.",
+            "47": "When someone I know well is unhappy I can almost feel that person's pain myself.",
+            "48": "I wouldn’t want people to treat me as though I were superior to them.",
+            "49": "If I had the opportunity I would like to attend a classical music concert.",
+            "50": "People often joke with me about the messiness of my room or desk.",
+            "51": "If someone has cheated me once I will always feel suspicious of that person.",
+            "52": "I feel that I am an unpopular person.",
+            "53": "When it comes to physical danger I am very fearful.",
+            "54": "If I want something from someone I will laugh at that person's worst jokes.",
+            "55": "I would be very bored by a book about the history of science and technology.",
+            "56": "Often when I set a goal I end up quitting without having reached it.",
+            "57": "I tend to be lenient in judging other people.",
+            "58": "When I'm in a group of people I'm often the one who speaks on behalf of the group.",
+            "59": "I rarely if ever have trouble sleeping due to stress or anxiety.",
+            "60": "I would never accept a bribe even if it were very large.",
+            "61": "People have often told me that I have a good imagination.",
+            "62": "I always try to be accurate in my work even at the expense of time.",
+            "63": "When people tell me that I’m wrong my first reaction is to argue with them.",
+            "64": "I prefer jobs that involve active social interaction to those that involve working alone.",
+            "65": "Whenever I feel worried about something I want to share my concern with another person.",
+            "66": "I would like to be seen driving around in a very expensive car.",
+            "67": "I think of myself as a somewhat eccentric person.",
+            "68": "I don’t allow my impulses to govern my behavior.",
+            "69": "Most people tend to get angry more quickly than I do.",
+            "70": "People often tell me that I should try to cheer up.",
+            "71": "I feel strong emotions when someone close to me is going away for a long time.",
+            "72": "I think that I am entitled to more respect than the average person is.",
+            "73": "Sometimes I like to just watch the wind as it blows through the trees.",
+            "74": "When working I sometimes have difficulties due to being disorganized.",
+            "75": "I find it hard to fully forgive someone who has done something mean to me.",
+            "76": "I sometimes feel that I am a worthless person.",
+            "77": "Even in an emergency I wouldn't feel like panicking.",
+            "78": "I wouldn't pretend to like someone just to get that person to do favors for me.",
+            "79": "I’ve never really enjoyed looking through an encyclopedia.",
+            "80": "I do only the minimum amount of work needed to get by.",
+            "81": "Even when people make a lot of mistakes I rarely say anything negative.",
+            "82": "I tend to feel quite self-conscious when speaking in front of a group of people.",
+            "83": "I get very anxious when waiting to hear about an important decision.",
+            "84": "I’d be tempted to use counterfeit money if I were sure I could get away with it.",
+            "85": "I don't think of myself as the artistic or creative type.",
+            "86": "People often call me a perfectionist.",
+            "87": "I find it hard to compromise with people when I really think I’m right.",
+            "88": "The first thing that I always do in a new place is to make friends.",
+            "89": "I rarely discuss my problems with other people.",
+            "90": "I would get a lot of pleasure from owning expensive luxury goods.",
+            "91": "I find it boring to discuss philosophy.",
+            "92": "I prefer to do whatever comes to mind rather than stick to a plan.",
+            "93": "I find it hard to keep my temper when people insult me.",
+            "94": "Most people are more upbeat and dynamic than I generally am.",
+            "95": "I remain unemotional even in situations where most people get very sentimental.",
+            "96": "I want people to know that I am an important person of high status.",
+            "97": "I have sympathy for people who are less fortunate than I am.",
+            "98": "I try to give generously to those in need.",
+            "99": "It wouldn’t bother me to harm someone I didn’t like.",
+            "100": "People see me as a hard-hearted person."
+        },
+
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 5. Format: \"statement index: numerical_score\".",
+        "prompt": "You will find a series of statements about you. Please read each statement and decide how much you agree or disagree with that statement. Then write your response in the space next to the statement using the following scale: 5 denotes strongly agree, 4 denotes agree, 3 denotes neutral (neither agree nor disagree), 2 denotes disagree, 1 denotes strongly disagree. Please answer every statement, even if you are not completely sure of your response.",
+
+        "scale": 6,
+        "compute_mode": "AVG",
+        "reverse": [
+            6, 54, 12, 36, 84, 42, 66, 90, 72, 96, 29, 77, 35, 59, 41, 89, 95, 52, 76, 10, 82,
+            16, 70, 94, 51, 75, 9, 15, 63, 87, 21, 93, 50, 74, 56, 80, 38, 20, 44, 92, 1, 25, 55, 79,
+            13, 85, 19, 91, 99, 100
+        ],
+        "categories": [
+            {
+                "cat_name": "Honesty-Humility",
+                "cat_questions": [ 30, 78, 60, 18, 24, 48],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.25,
+                        "std": 0.9,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Extraversion",
+                "cat_questions": [4, 28, 34, 58, 40, 64, 88, 22, 46],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.25,
+                        "std": 0.9,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Agreeableness",
+                "cat_questions": [ 3, 27, 33, 57, 81, 39, 69, 45],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.64,
+                        "std": 0.72,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Conscientiousness",
+                "cat_questions": [ 2, 26, 8, 32, 86, 14, 62, 68],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.45,
+                        "std": 0.73,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions":  [5, 53, 11, 83, 17, 41, 65, 23, 47, 71],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.32,
+                        "std": 0.82,
+                        "n": 6076
+                    }
+                ]
+            },
+            {
+                "cat_name": "Openness",
+                "cat_questions": [7, 31, 37, 61],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.92,
+                        "std": 0.66,
+                        "n": 6076
+                    }
+                ]
+            }
+        ]
+
+
+    },
+    {
+        "name": "EPQ-R",
+        "questions": {
+            "1": "Do you have many different hobbies?",
+            "2": "Do you stop to think things over before doing anything?",
+            "3": "Does your mood often go up and down?",
+            "4": "Have you ever taken the praise for something you knew someone else had really done?",
+            "5": "Do you take much notice of what people think?.",
+            "6": "Are you a talkative person?",
+            "7": "Would being in debt worry you?",
+            "8": "Do you ever feel 'just miserable' for no reason?",
+            "9": "Do you give money to charities?",
+            "10": "Were you ever greedy by helping yourself to more than your share of anything?",
+            "11": "Are you rather lively?",
+            "12": "Would it upset you a lot to see a child or an animal suffer?",
+            "13": "Do you often worry about things you should not have done or said?",
+            "14": "Do you dislike people who don't know how to behave themselves?",
+            "15": "If you say you will do something, do you always keep your promise no matter how inconvenient it might be?",
+            "16": "Can you usually let yourself go and enjoy yourself at a lively party?",
+            "17": "Are you an irritable person?",
+            "18": "Should people always respect the law?",
+            "19": "Have you ever blamed someone for doing something you knew was really your fault?",
+            "20": "Do you enjoy meeting new people?",
+            "21": "Are good manners very important?",
+            "22": "Are your feelings easily hurt?",
+            "23": "Are all your habits good and desirable ones?",
+            "24": "Do you tend to keep in the background on social occasions?",
+            "25": "Would you take drugs which may have strange or dangerous effects?",
+            "26": "Do you often feel 'fed-up'?",
+            "27": "Have you ever taken anything (even a pin or button) that belonged to someone else?",
+            "28": "Do you like going out a lot?",
+            "29": "Do you prefer to go your own way rather than act by the rules?",
+            "30": "Do you enjoy hurting people you love?",
+            "31": "Are you often troubled about feelings of guilt?",
+            "32": "Do you sometimes talk about things you know nothing about?",
+            "33": "Do you prefer reading to meeting people?",
+            "34": "Do you have enemies who want to harm you?",
+            "35": "Would you call yourself a nervous person?",
+            "36": "Do you have many friends?",
+            "37": "Do you enjoy practical jokes that can sometimes really hurt people?",
+            "38": "Are you a worrier?",
+            "39": "As a child did you do as you were told immediately and without grumbling?",
+            "40": "Would you call yourself happy-go-lucky?",
+            "41": "Do good manners and cleanliness matter much to you?",
+            "42": "Have you often gone against your parents' wishes?",
+            "43": "Do you worry about awful things that might happen?",
+            "44": "Have you ever broken or lost something belonging to someone else?",
+            "45": "Do you usually take the initiative in making new friends?",
+            "46": "Would you call yourself tense or 'highly-strung'?",
+            "47": "Are you mostly quiet when you are with other people?",
+            "48": "Do you think marriage is old-fashioned and should be done away with?",
+            "49": "Do you sometimes boast a little?",
+            "50": "Are you more easy-going about right and wrong than most people?",
+            "51": "Can you easily get some life into a rather dull party?",
+            "52": "Do you worry about your health?",
+            "53": "Have you ever said anything bad or nasty about anyone?",
+            "54": "Do you enjoy co-operating with others?",
+            "55": "Do you like telling jokes and funny stories to your friends?",
+            "56": "Do most things taste the same to you?",
+            "57": "As a child were you ever cheeky to your parents?",
+            "58": "Do you like mixing with people?",
+            "59": "Does it worry you if you know there are mistakes in your work?",
+            "60": "Do you suffer from sleeplessness?",
+            "61": "Have people said that you sometimes act too rashly?",
+            "62": "Do you always wash before a meal?",
+            "63": "Do you nearly always have a 'ready answer' when people talk to you?",
+            "64": "Do you like to arrive at appointments in plenty of time?",
+            "65": "Have you often felt listless and tired for no reason?",
+            "66": "Have you ever cheated at a game?",
+            "67": "Do you like doing things in which you have to act quickly?",
+            "68": "Is (or was) your mother a good woman?",
+            "69": "Do you often make decisions on the spur of the moment?",
+            "70": "Do you often feel life is very dull?",
+            "71": "Have you ever taken advantage of someone?",
+            "72": "Do you often take on more activities than you have time for?",
+            "73": "Are there several people who keep trying to avoid you?",
+            "74": "Do you worry a lot about your looks?",
+            "75": "Do you think people spend too much time safeguarding their future with savings and insurance?",
+            "76": "Have you ever wished that you were dead?",
+            "77": "Would you dodge paying taxes if you were sure you could never be found out?",
+            "78": "Can you get a patty going?",
+            "79": "Do you try not to be rude to people?",
+            "80": "Do you worry too long after an embarrassing experience?",
+            "81": "Do you generally 'look before you leap'?",
+            "82": "Have you ever insisted on having your own way?",
+            "83": "Do you suffer from 'nerves'?",
+            "84": "Do you often feel lonely?",
+            "85": "Can you on the whole trust people to tell the truth?",
+            "86": "Do you always practice what you preach?",
+            "87": "Are you easily hurt when people find fault with you or the work you do?",
+            "88": "Is it better to follow society's rules than go your own way?",
+            "89": "Have you ever been late for an appointment or work?",
+            "90": "Do you like plenty of bustle and excitement around you?",
+            "91": "Would you like other people to be afraid of you?",
+            "92": "Are you sometimes bubbling over with energy and sometimes very sluggish?",
+            "93": "Do you sometimes put off until tomorrow what you ought to do today?",
+            "94": "Do other people think of you as being very lively?",
+            "95": "Do people tell you a lot of lies?",
+            "96": "Do you believe one has special duties to one's family?",
+            "97": "Are you touchy about some things?",
+            "98": "Are you always willing to admit it when you have made a mistake?",
+            "99": "Would you feel very sorry for an animal caught in a trap?",
+            "100": "When your temper rises, do you find it difficult to control?"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 0 to 1. Format: \"statement index: score\".",
+        "prompt": "You can only reply numbers from 0 to 1 in the following statements. Please respond to each question by using the number '1' to indicate 'YES' and '0' to indicate 'NO'. There are no right or wrong answers, and no trick questions. Work quickly and do not think too long about the exact meaning of the questions. Here are the statements, score them one by one:",
+        "scale": 1,
+        "compute_mode": "SUM",
+        "reverse": [24,33,47,2,5,7,9,12,14,18,21,41,54,59,64,68,79,81,85,88,96,99,4,10,19,27,32,44,49,53,57,66,71,77,82,89,93],
+        "categories": [
+            {
+                "cat_name": "Extraversion",
+                "cat_questions": [1, 6, 11, 16, 20, 28, 36, 40, 45, 51, 55, 58, 61, 63, 67, 69, 72, 78, 90, 94, 24, 33, 47],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "mean": 12.51,
+                        "std": 6,
+                        "n": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "mean": 14.14,
+                        "std": 5.06,
+                        "n": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Pschoticism",
+                "cat_questions": [25, 29, 30, 34, 37, 42, 48, 50, 56, 73, 75, 91, 95, 2, 5, 7, 9, 12, 14, 18, 21, 41, 54, 59, 64, 68, 79, 81, 85, 88, 96, 99],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "mean": 7.19,
+                        "std": 4.6,
+                        "n": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "mean": 5.73,
+                        "std": 3.85,
+                        "n": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions": [3, 8, 13, 17, 22, 26, 31, 35, 38, 43, 46, 52, 60, 65, 70, 74, 76, 80, 83, 84, 87, 92, 97, 100],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "mean": 10.54,
+                        "std": 5.81,
+                        "n": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "mean": 12.47,
+                        "std": 5.06,
+                        "n": 878
+                    }
+                ]
+            },
+            {
+                "cat_name": "Lying",
+                "cat_questions": [15, 23, 39, 62, 86, 98, 4, 10, 19, 27, 32, 44, 49, 53, 57, 66, 71, 77, 82, 89, 93],
+                "crowd": [
+                    {
+                        "crowd_name": "Male",
+                        "mean": 7.1,
+                        "std": 4.28,
+                        "n": 693
+                    },
+                    {
+                        "crowd_name": "Female",
+                        "mean": 6.88,
+                        "std": 3.97,
+                        "n": 878
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "DTDD",
+        "questions": {
+            "1": "I tend to manipulate others to get my way.",
+            "2": "I have used deceit or lied to get my way.",
+            "3": "I have use flattery to get my way.",
+            "4": "I tend to exploit others towards my own end.",
+            "5": "I tend to lack remorse.",
+            "6": "I tend to be unconcerned with the morality of my actions.",
+            "7": "I tend to be callous or insensitive.",
+            "8": "I tend to be cynical.",
+            "9": "I tend to want others to admire me.",
+            "10": "I tend to want others to pay attention to me.",
+            "11": "I tend to seek prestige or status.",
+            "12": "I tend to expect special favors from others."
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 9. Format: \"statement index: score\".",
+        "prompt": "You can only reply numbers from 1 to 9 in the following statements. Please provide a rating based on the following 12 descriptions using a scale from 1 (disagree strongly) to 9 (agree strongly). Here are the statements, score them one by one:",
+        "scale": 10,
+        "compute_mode": "AVG",
+        "reverse": [],
+        "categories": [
+            {
+                "cat_name": "Machiavellianism",
+                "cat_questions": [1,2,3,4],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 3.78,
+                        "std": 1.63,
+                        "n": 577
+                    }
+                ]
+            },
+            {
+                "cat_name": "Psychopathy",
+                "cat_questions": [5,6,7,8],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 2.47,
+                        "std": 1.44,
+                        "n": 577
+                    }
+                ]
+            },
+            {
+                "cat_name": "Neuroticism",
+                "cat_questions": [9,10,11,12],
+                "crowd": [
+                    {
+                        "crowd_name": "Crowd",
+                        "mean": 4.88,
+                        "std": 1.8,
+                        "n": 577
+                    }
+                ]
+            }
+        ]
+    },
+    {
+
+    },
+    {
+        "name": "16P",
+        "questions": {
+            "1": "You regularly make new friends",
+            "2": "You spend a lot of your free time exploring various random topics that pique your interest",
+            "3": "Seeing other people cry can easily make you feel like you want to cry too",
+            "4": "You often make a backup plan for a backup plan",
+            "5": "You usually stay calm, even under a lot of pressure",
+            "6": "At social events, you rarely try to introduce yourself to new people and mostly talk to the ones you already know",
+            "7": "You prefer to completely finish one project before starting another",
+            "8": "You are very sentimental",
+            "9": "You like to use organizing tools like schedules and lists",
+            "10": "Even a small mistake can cause you to doubt your overall abilities and knowledge",
+            "11": "You feel comfortable just walking up to someone you find interesting and striking up a conversation",
+            "12": "You are not too interested in discussing various interpretations and analyses of creative works",
+            "13": "You are more inclined to follow your head than your heart",
+            "14": "You usually prefer just doing what you feel like at any given moment instead of planning a particular daily routine",
+            "15": "You rarely worry about whether you make a good impression on people you meet",
+            "16": "You enjoy participating in group activities",
+            "17": "You like books and movies that make you come up with your own interpretation of the ending",
+            "18": "Your happiness comes more from helping others accomplish things than your own accomplishments",
+            "19": "You are interested in so many things that you find it difficult to choose what to try next",
+            "20": "You are prone to worrying that things will take a turn for the worse",
+            "21": "You avoid leadership roles in group settings",
+            "22": "You are definitely not an artistic type of person",
+            "23": "You think the world would be a better place if people relied more on rationality and less on their feelings",
+            "24": "You prefer to do your chores before allowing yourself to relax",
+            "25": "You enjoy watching people argue",
+            "26": "You tend to avoid drawing attention to yourself",
+            "27": "Your mood can change very quickly",
+            "28": "You lose patience with people who are not as efficient as you",
+            "29": "You often end up doing things at the last possible moment",
+            "30": "You have always been fascinated by the question of what, if anything, happens after death",
+            "31": "You usually prefer to be around others rather than on your own",
+            "32": "You become bored or lose interest when the discussion gets highly theoretical",
+            "33": "You find it easy to empathize with a person whose experiences are very different from yours",
+            "34": "You usually postpone finalizing decisions for as long as possible",
+            "35": "You rarely second-guess the choices that you have made",
+            "36": "After a long and exhausting week, a lively social event is just what you need",
+            "37": "You enjoy going to art museums",
+            "38": "You often have a hard time understanding other people’s feelings",
+            "39": "You like to have a to-do list for each day",
+            "40": "You rarely feel insecure",
+            "41": "You avoid making phone calls",
+            "42": "You often spend a lot of time trying to understand views that are very different from your own",
+            "43": "In your social circle, you are often the one who contacts your friends and initiates activities",
+            "44": "If your plans are interrupted, your top priority is to get back on track as soon as possible",
+            "45": "You are still bothered by mistakes that you made a long time ago",
+            "46": "You rarely contemplate the reasons for human existence or the meaning of life",
+            "47": "Your emotions control you more than you control them",
+            "48": "You take great care not to make people look bad, even when it is completely their fault",
+            "49": "Your personal work style is closer to spontaneous bursts of energy than organized and consistent efforts",
+            "50": "When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you",
+            "51": "You would love a job that requires you to work alone most of the time",
+            "52": "You believe that pondering abstract philosophical questions is a waste of time",
+            "53": "You feel more drawn to places with busy, bustling atmospheres than quiet, intimate places",
+            "54": "You know at first glance how someone is feeling",
+            "55": "You often feel overwhelmed",
+            "56": "You complete things methodically without skipping over any steps",
+            "57": "You are very intrigued by things labeled as controversial",
+            "58": "You would pass along a good opportunity if you thought someone else needed it more",
+            "59": "You struggle with deadlines",
+            "60": "You feel confident that things will work out for you"
+        },
+        "inner_setting": "You are a helpful assistant who can only reply numbers from 1 to 7. Please output your score using the format: \"statement index: score\".",
+        "prompt": "Score each statement on a scale of 1 to 7, with 1 being agree and 7 being disagree. Here are the statements, score the following 30 statements:\n",
+        "scale": 8,
+        "compute_mode": "SUM",
+        "reverse": [],
+        "categories": []
+    }
+]

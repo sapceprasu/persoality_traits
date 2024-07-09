@@ -1,0 +1,56 @@
+
+results obtained from the google-flan model: 
+
+
+[{'generated_text': '1'}, {'generated_text': '1. no'}, {'generated_text': '2.'}, {'generated_text': 'no'}, {'generated_text': '4.'}, {'generated_text': 'no'}, {'generated_text': '6. no'}, {'generated_text': 'no'}, {'generated_text': 'no'}, {'generated_text': 'no'}, {'generated_text': 'no'}, {'generated_text': '11.'}, {'generated_text': 'Yes'}, {'generated_text': 'no'}, {'generated_text': '14.'}, {'generated_text': 'no'}, {'generated_text': '16. no'}, {'generated_text': '17. no'}, {'generated_text': '18.'}, {'generated_text': '19.'}, {'generated_text': '20.'}, {'generated_text': 'no'}, {'generated_text': 
+'22.'}, {'generated_text': 'no'}, {'generated_text': '24.'}, {'generated_text': '25.'}, {'generated_text': '26.'}, {'generated_text': 'i am a good worker'}, {'generated_text': '28.'}, {'generated_text': '29.'}]
+
+
+ [{'generated_text': 'The score is 0'}, {'generated_text': '1. Yes 2. No 3. No 4. No 5. No 6. Yes 7. Yes 8. No 9. Yes 10. No 11. Yes 12. Yes 13. Yes 14. Yes 15. Yes 16. Yes 17. Yes 18. Yes 19. Yes 20. Yes 21. Yes 22. Yes 23. Yes 24. Yes 25. Yes 26. Yes 27. Yes 28. Yes 29. Yes 30. No'}]
+
+
+
+
+ this was the response from gpt 3.5 
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1: 0\n2: 1\n3: 1\n4: 1\n5: 1\n6: 1\n7: 0\n8: 1\n9: 1\n10: 1"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+
+
+
+
+
+
+this was the result thar was actually used:
+
+1: 0
+2: 1
+3: 1
+4: 1
+5: 1
+6: 1
+7: 0
+8: 1
+9: 1
+10: 1
+
+
+
+response from the google flem :
+
+ [{'generated_text': '1. Yes 2. No 3. Yes 4. Yes 5. No 6. No 7. Yes 8. No 9. Yes 10. No 11. Yes 12. Yes 13. Yes 14. Yes 15. No 16. Yes 17. No 18. No 19. Yes 20. Yes 21. Yes 22. Yes 23. Yes 24. Yes 25. Yes 26. Yes 27. Yes 28. Yes 29. Yes 30. Yes'}]
+
+
+
+
+ ['role: system, content: You are a helpful assistant who can only reply numbers from 0 to 1. Format: "statement index: score". role: user, content: You can only reply numbers from 0 to 1 in the following statements. Please respond to each question by using the number \'1\' to indicate \'YES\' and \'0\' to indicate \'NO\'. There are no right or wrong answers, and no trick questions. Work quickly 
+and do not think too long about the exact meaning of the questions. Here are the statements, score them one by one:\n1. Do you have many different hobbies?\n2. Do you stop to think things over before doing anything?\n3. Does your mood often go up and down?\n4. Have you ever taken the praise for something you knew someone else had really done?\n5. Do you take much notice of what people think?\n6. Are you a talkative person?\n7. Would being in debt worry you?\n8. Do you ever feel \'just miserable\' for no reason?\n9. Do you give money to charities?\n10. Were you ever greedy by helping yourself to more than your share of anything?\n11. Are you rather lively?\n12. Would it upset you a lot to see a child or an animal suffer?\n13. Do you often worry about things you should not have done or said?\n14. Do you dislike people 
+who don\'t know how to behave themselves?\n15. If you say you will do something, do you always keep your promise no matter how inconvenient it might be?\n16. Can you usually let yourself go and enjoy yourself at a lively party?\n17. Are you an irritable person?\n18. Should people always respect the law?\n19. Have you ever blamed someone for doing something you knew was really your fault?\n20. Do you enjoy meeting new people?\n21. Are good manners very important?\n22. Are your feelings easily hurt?\n23. Are all your habits good and desirable ones?\n24. Do you tend to keep in the background on social occasions?\n25. Would you take drugs which may have strange or dangerous effects?\n26. Do you often feel \'fed-up\'?\n27. Have you ever taken anything (even a pin or button) that belonged to someone else?\n28. Do you like 
+going out a lot?\n29. Do you prefer to go your own way rather than act by the rules?\n30. Do you enjoy hurting people?']
